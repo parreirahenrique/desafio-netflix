@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
+
+    <!--Responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--Owl CSS-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
     <title>Netflix</title>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">NETFLIX</h2>
+            <div>
+                <a href="#"><img src="img/logo.png" class="logo"></a>                
+            </div>
             <nav>
                 <a href="#">Início</a>
                 <a href="#">Série</a>
@@ -19,5 +29,74 @@
             </nav>
         </div>
     </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <div><img src="img/suits-logo.png" class="titulo"></div>
+                <p class="descricao">Mesmo sem se formar e sem licença para advogar, um jovem brilhante impressiona um importante advogado e consegue uma cobiçada posição em sua firma.</p>
+                <div class="botoes">
+                    <button role="button" class="botao">
+                        <i class="fas fa-play"></i>
+                        Assistir agora
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                        Mais informações
+                    </button>
+                </div>
+            </div>            
+        </div>
+    </main>
+
+    <div class="carrossel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="/img/mini1.jpg" class="box-filme">
+            </div>
+
+            <div class="item">
+                <img src="/img/mini2.jpg" class="box-filme">
+            </div>
+
+            <div class="item">
+                <img src="/img/mini3.jpg" class="box-filme">
+            </div>
+
+            <div class="item">
+                <img src="/img/mini4.jpg" class="box-filme">
+            </div>
+
+            <div class="item">
+                <img src="/img/mini5.jpg" class="box-filme">
+            </div>
+
+            <div class="item">
+                <img src="/img/mini6.jpg" class="box-filme">
+            </div>
+
+            <div class="item">
+                <img src="/img/mini7.jpg" class="box-filme">
+            </div>
+
+            <div class="item">
+                <img src="/img/mini8.jpg" class="box-filme">
+            </div>
+
+            <div class="item">
+                <img src="/img/mini9.jpg" class="box-filme">
+            </div>
+
+            <div class="item">
+                <img src="/img/mini10.jpg" class="box-filme">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/3ceebb18b2.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+
 </body>
 </html>

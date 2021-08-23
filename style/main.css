@@ -10,31 +10,91 @@
     box-sizing: border-box;
 }
 
+/* Elementos base */
 body{
-    background-color: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
-
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
 }
 
-.container{
+header .container{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo{
-    color:var(--vermelho);
-    font-family: 'Arial Black', Times;
-    font-size: 40px;
+header .logo{
+    margin: 10px 10px;
+    max-width: 100px;
 }
 
 header nav a{
     text-decoration: none;
     color: var(--cinza);
     margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header nav a:hover{
     color: #fff;
+}
+
+/* Filme principal */
+main .filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-suits.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main .filme-principal .container{
+    margin-left: 30px;
+    width: 70%;
+}
+
+main .filme-principal .container .titulo{
+    height: 50px;
+    margin-top: 15%;
+}
+
+main .filme-principal .container .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+} 
+
+main .filme-principal .container .botoes .botao{
+    background-color: rgba(0,0,0,.5);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+main .filme-principal .container .botoes .botao:hover{
+    background-color: white;
+    color: black;
+    transition: .3s ease all;
+}
+
+main .filme-principal .container .botoes .botao i{
+    margin-right: 8px;
+}
+
+.carrossel-filmes{
+    margin-top: 5px;
+}
+
+.carrossel-filmes .box-filme{
+    height: 50%;
+    width: 50%;
+    display: block;
 }
