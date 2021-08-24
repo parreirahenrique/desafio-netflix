@@ -42,12 +42,13 @@ header nav a:hover{
 
 /* Filme principal */
 #conteudo-principal{
-    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-suits.jpg');
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('img/capa-suits.jpg');
     height: 400px;
     background-size: cover;
 }
 
 main .filme-principal{
+    
     font-size: 16px;
     display: flex;
     flex-direction: column;
