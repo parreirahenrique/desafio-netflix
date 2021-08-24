@@ -30,20 +30,25 @@
         </div>
     </header>
 
-    <main>
+    <main id="conteudo-principal">
         <div class="filme-principal">
             <div class="container">
                 <div><img src="img/suits-logo.png" class="titulo"></div>
                 <p class="descricao">Mesmo sem se formar e sem licença para advogar, um jovem brilhante impressiona um importante advogado e consegue uma cobiçada posição em sua firma.</p>
                 <div class="botoes">
-                    <button role="button" class="botao">
-                        <i class="fas fa-play"></i>
-                        Assistir agora
-                    </button>
-                    <button role="button" class="botao">
-                        <i class="fas fa-info-circle"></i>
-                        Mais informações
-                    </button>
+                    <a href="https://www.youtube.com/watch?v=Ab2YIbP5xw8" target="_blank" class="link-1">
+                        <button role="button" class="botao">
+                            <i class="fas fa-play"></i>
+                            Assistir agora
+                        </button>
+                    </a>
+
+                    <a href="https://pt.wikipedia.org/wiki/Lista_de_epis%C3%B3dios_de_Suits" target="_blank" class="link-2">
+                        <button role="button" class="botao">
+                            <i class="fas fa-info-circle"></i>
+                            Mais informações
+                        </button>
+                    </a>
                 </div>
             </div>            
         </div>
@@ -51,45 +56,58 @@
 
     <div class="carrossel-filmes">
         <div class="owl-carousel owl-theme">
-            <div class="item">
-                <img src="/img/mini1.jpg" class="box-filme">
-            </div>
+            <button type="button" onclick="mudarSerie(this)" class="mudar-serie" value="1">
+                <div class="item">
+                    <img src="/img/mini1.jpg" class="box-filme">
+                </div>
+            </button>
+            <button type="button" onclick="mudarSerie(this)" class="mudar-serie" value="2">
+                <div class="item">
+                    <img src="/img/mini2.jpg" class="box-filme">
+                </div>
+            </button>
+            <button type="button" onclick="mudarSerie(this)" class="mudar-serie" value="3">
+                <div class="item">
+                    <img src="/img/mini3.jpg" class="box-filme">
+                </div>
+            </button>
+            <button type="button" onclick="mudarSerie(this)" class="mudar-serie" value="4">
+                <div class="item">
+                    <img src="/img/mini4.jpg" class="box-filme">
+                </div>
+            </button>
+            <button type="button" onclick="mudarSerie(this)" class="mudar-serie" value="5">
+                <div class="item">
+                    <img src="/img/mini5.jpg" class="box-filme">
+                </div>
+            </button>
+            <button type="button" onclick="mudarSerie(this)" class="mudar-serie" value="6">
+                <div class="item">
+                    <img src="/img/mini6.jpg" class="box-filme">
+                </div>
+            </button>
+            <button type="button" onclick="mudarSerie(this)" class="mudar-serie" value="7">
+                <div class="item">
+                    <img src="/img/mini7.jpg" class="box-filme">
+                </div>
+            </button>
+            <button type="button" onclick="mudarSerie(this)" class="mudar-serie" value="8">
+                <div class="item">
+                    <img src="/img/mini8.jpg" class="box-filme">
+                </div>
+            </button>
+            <button type="button" onclick="mudarSerie(this)" class="mudar-serie" value="9">
+                <div class="item">
+                    <img src="/img/mini9.jpg" class="box-filme">
+                </div>
+            </button>
+            <button type="button" onclick="mudarSerie(this)" class="mudar-serie" value="10">
+                <div class="item">
+                    <img src="/img/mini10.jpg" class="box-filme">
+                </div>
+            </button>
 
-            <div class="item">
-                <img src="/img/mini2.jpg" class="box-filme">
-            </div>
-
-            <div class="item">
-                <img src="/img/mini3.jpg" class="box-filme">
-            </div>
-
-            <div class="item">
-                <img src="/img/mini4.jpg" class="box-filme">
-            </div>
-
-            <div class="item">
-                <img src="/img/mini5.jpg" class="box-filme">
-            </div>
-
-            <div class="item">
-                <img src="/img/mini6.jpg" class="box-filme">
-            </div>
-
-            <div class="item">
-                <img src="/img/mini7.jpg" class="box-filme">
-            </div>
-
-            <div class="item">
-                <img src="/img/mini8.jpg" class="box-filme">
-            </div>
-
-            <div class="item">
-                <img src="/img/mini9.jpg" class="box-filme">
-            </div>
-
-            <div class="item">
-                <img src="/img/mini10.jpg" class="box-filme">
-            </div>
+            
         </div>
     </div>
 
